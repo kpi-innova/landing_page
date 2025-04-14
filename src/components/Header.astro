@@ -1,0 +1,27 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+---
+
+<header class="fixed w-full bg-light/80 dark:bg-dark/80 backdrop-blur-sm z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <a href="/" class="flex items-center">
+        <img src="/logo.svg" alt="KPI-Innova Logo" class="h-8" />
+      </a>
+      
+      <nav class="hidden md:flex space-x-8">
+        <a href="#servicios" class="text-dark dark:text-light hover:text-primary transition-colors">Servicios</a>
+        <a href="#beneficios" class="text-dark dark:text-light hover:text-primary transition-colors">Beneficios</a>
+        <a href="#proceso" class="text-dark dark:text-light hover:text-primary transition-colors">Proceso</a>
+        <a href="#contacto" class="text-dark dark:text-light hover:text-primary transition-colors">Contacto</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <ThemeToggle />
+        <a href="#contacto" class="bg-primary text-light px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+          Contáctanos
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
