@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import Logo from '../assets/kpi.jpg';
+
 const currentYear = new Date().getFullYear();
 ---
 
@@ -6,7 +9,16 @@ const currentYear = new Date().getFullYear();
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <div>
-        <img src="/logo.svg" alt="KPI-Innova Logo" class="h-8" />
+        <div class="flex items-center gap-2 mb-4">
+          <Image 
+            src={Logo} 
+            alt="KPI Innova Logo" 
+            class="h-8 w-auto"
+          />
+          <h3 class="text-xl font-bold text-light-blue dark:text-dark-blue">
+            KPI Innova
+          </h3>
+        </div>
         <p class="mt-4 text-gray-600 dark:text-gray-400">
           Soluciones de automatización industrial y análisis de datos para la industria moderna.
         </p>
@@ -40,7 +52,7 @@ const currentYear = new Date().getFullYear();
         </ul>
       </div>
 
-      <div>
+      <!-- <div>
         <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider">
           Legal
         </h3>
@@ -74,7 +86,7 @@ const currentYear = new Date().getFullYear();
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
 
     <div class="mt-12 border-t border-gray-200 dark:border-gray-700 pt-8">
