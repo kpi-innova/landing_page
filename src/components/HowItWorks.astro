@@ -1,25 +1,29 @@
 ---
 const steps = [
   {
-    number: '01',
-    title: 'Análisis Inicial',
-    description: 'Evaluamos sus necesidades y procesos actuales para identificar áreas de mejora.'
+    number: "01",
+    title: "Análisis Inicial",
+    description:
+      "Evaluamos tus necesidades y procesos actuales para identificar áreas de mejora y oportunidades de optimización.",
   },
   {
-    number: '02',
-    title: 'Diseño de Solución',
-    description: 'Desarrollamos una solución personalizada que se adapta a sus objetivos específicos.'
+    number: "02",
+    title: "Diseño de Solución",
+    description:
+      "Desarrollamos una solución personalizada que se adapta perfectamente a tus objetivos específicos y desafíos únicos.",
   },
   {
-    number: '03',
-    title: 'Implementación',
-    description: 'Instalamos y configuramos los sistemas con mínima interrupción de sus operaciones.'
+    number: "03",
+    title: "Implementación Experta",
+    description:
+      "Instalamos y configuramos los sistemas con la máxima eficiencia y mínima interrupción de tus operaciones actuales.",
   },
   {
-    number: '04',
-    title: 'Seguimiento',
-    description: 'Proporcionamos soporte continuo y optimizaciones basadas en el rendimiento.'
-  }
+    number: "04",
+    title: "Seguimiento y Optimización",
+    description:
+      "Proporcionamos soporte continuo y realizamos optimizaciones basadas en el rendimiento para asegurar el éxito a largo plazo.",
+  },
 ];
 ---
 
@@ -27,34 +31,41 @@ const steps = [
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center">
       <h2 class="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
-        Cómo Trabajamos
+        ¿Cómo Trabajamos?
       </h2>
       <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
-        Un proceso simple y efectivo para su transformación digital
+        Te acompañamos en cada paso de tu transformación digital
       </p>
     </div>
 
     <div class="mt-16 relative">
-      <div class="absolute top-0 left-1/2 w-px h-full bg-gray-200 dark:bg-gray-700 -translate-x-1/2"></div>
-      
+      <div
+        class="absolute top-0 left-1/2 w-px h-full bg-gray-200 dark:bg-gray-700 -translate-x-1/2"
+      >
+      </div>
+
       <div class="space-y-16">
-        {steps.map((step, index) => (
-          <div class={`relative flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-            <div class="flex items-center space-x-8 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-md relative">
-              <div class="absolute top-1/2 -translate-y-1/2 {index % 2 === 0 ? 'right-0 translate-x-[200%]' : 'left-0 -translate-x-[200%]'} w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">
-                {step.number}
-              </div>
-              <div class="pl-4">
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                  {step.title}
-                </h3>
-                <p class="mt-2 text-gray-600 dark:text-gray-300">
-                  {step.description}
-                </p>
+        {
+          steps.map((step, index) => (
+            <div
+              class={`relative flex items-center ${index % 2 === 0 ? "justify-start" : "justify-end"}`}
+            >
+              <div class="flex items-center space-x-8 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-md relative">
+                <div class="absolute top-1/2 -translate-y-1/2 {index % 2 === 0 ? 'right-0 translate-x-[200%]' : 'left-0 -translate-x-[200%]'} w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                  {step.number}
+                </div>
+                <div class="pl-4">
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    {step.title}
+                  </h3>
+                  <p class="mt-2 text-gray-600 dark:text-gray-300">
+                    {step.description}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))
+        }
       </div>
     </div>
   </div>

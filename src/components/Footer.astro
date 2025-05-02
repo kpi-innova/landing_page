@@ -1,6 +1,6 @@
 ---
-import { Image } from 'astro:assets';
-import Logo from '../assets/kpi.jpg';
+import { Image } from "astro:assets";
+import Logo from "../assets/kpi.jpg";
 
 const currentYear = new Date().getFullYear();
 ---
@@ -10,60 +10,79 @@ const currentYear = new Date().getFullYear();
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <div>
         <div class="flex items-center gap-2 mb-4">
-          <Image 
-            src={Logo} 
-            alt="KPI Innova Logo" 
-            class="h-8 w-auto"
-          />
+          <Image src={Logo} alt="KPI Innova Logo" class="h-8 w-auto" />
           <h3 class="text-xl font-bold text-light-blue dark:text-dark-blue">
             KPI Innova
           </h3>
         </div>
         <p class="mt-4 text-gray-600 dark:text-gray-400">
-          Soluciones de automatización industrial y análisis de datos para la industria moderna.
+          Soluciones de automatización y sistemas de información para la
+          industria moderna.
         </p>
       </div>
-      
+
       <div>
-        <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider">
+        <h3
+          class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider"
+        >
           Servicios
         </h3>
         <ul class="mt-4 space-y-4">
           <li>
-            <a href="#servicios" class="text-gray-600 dark:text-gray-400 hover:text-primary">
+            <a
+              href="#servicios"
+              class="text-gray-600 dark:text-gray-400 hover:text-primary"
+            >
               Automatización Industrial
             </a>
           </li>
           <li>
-            <a href="#servicios" class="text-gray-600 dark:text-gray-400 hover:text-primary">
-              Análisis de Datos
+            <a
+              href="#servicios"
+              class="text-gray-600 dark:text-gray-400 hover:text-primary"
+            >
+              Sistemas de Información
             </a>
           </li>
           <li>
-            <a href="#servicios" class="text-gray-600 dark:text-gray-400 hover:text-primary">
-              Integración PLC
-            </a>
-          </li>
-          <li>
-            <a href="#servicios" class="text-gray-600 dark:text-gray-400 hover:text-primary">
+            <a
+              href="#servicios"
+              class="text-gray-600 dark:text-gray-400 hover:text-primary"
+            >
               Sistemas HMI
+            </a>
+          </li>
+          <li>
+            <a
+              href="#servicios"
+              class="text-gray-600 dark:text-gray-400 hover:text-primary"
+            >
+              Migración de Sistemas
             </a>
           </li>
         </ul>
       </div>
 
       <div>
-        <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider">
+        <h3
+          class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider"
+        >
           Legal
         </h3>
         <ul class="mt-4 space-y-4">
           <li>
-            <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">
+            <a
+              href="#"
+              class="text-gray-600 dark:text-gray-400 hover:text-primary"
+            >
               Política de Privacidad
             </a>
           </li>
           <li>
-            <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">
+            <a
+              href="#"
+              class="text-gray-600 dark:text-gray-400 hover:text-primary"
+            >
               Términos de Servicio
             </a>
           </li>
@@ -71,17 +90,29 @@ const currentYear = new Date().getFullYear();
       </div>
 
       <div>
-        <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider">
+        <h3
+          class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider"
+        >
           Redes Sociales
         </h3>
         <ul class="mt-4 space-y-4">
           <li>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-600 dark:text-gray-400 hover:text-primary"
+            >
               LinkedIn
             </a>
           </li>
           <li>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-600 dark:text-gray-400 hover:text-primary"
+            >
               Twitter
             </a>
           </li>

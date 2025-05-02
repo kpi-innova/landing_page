@@ -1,33 +1,53 @@
 ---
-import ThemeToggle from './ThemeToggle.astro';
-import { Image } from 'astro:assets';
-import Logo from '../assets/kpi.jpg';
+import ThemeToggle from "./ThemeToggle.astro";
+import { Image } from "astro:assets";
+import Logo from "../assets/kpi.jpg";
 ---
 
 <header class="fixed w-full bg-light/80 dark:bg-dark/80 backdrop-blur-sm z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center py-4">
       <a href="/" class="flex items-center gap-2">
-        <Image 
-          src={Logo} 
-          alt="KPI Innova Logo" 
-          class="h-8 w-auto"
-        />
+        <Image src={Logo} alt="KPI Innova Logo" class="h-8 w-auto" />
         <span class="text-2xl font-bold text-light-blue dark:text-dark-blue">
           KPI Innova
         </span>
       </a>
-      
+
       <nav class="hidden md:flex space-x-8">
-        <a href="#servicios" class="text-dark dark:text-light hover:text-primary transition-colors">Servicios</a>
-        <a href="#beneficios" class="text-dark dark:text-light hover:text-primary transition-colors">Beneficios</a>
-        <a href="#proceso" class="text-dark dark:text-light hover:text-primary transition-colors">Proceso</a>
-        <a href="#contacto" class="text-dark dark:text-light hover:text-primary transition-colors">Contacto</a>
+        <a
+          href="#quienessomos"
+          class="text-dark dark:text-light hover:text-primary transition-colors"
+          >Quienes Somos</a
+        >
+        <a
+          href="#servicios"
+          class="text-dark dark:text-light hover:text-primary transition-colors"
+          >Servicios</a
+        >
+        <a
+          href="#beneficios"
+          class="text-dark dark:text-light hover:text-primary transition-colors"
+          >Beneficios</a
+        >
+        <a
+          href="#proceso"
+          class="text-dark dark:text-light hover:text-primary transition-colors"
+          >Proceso</a
+        >
+        <a
+          href="#contacto"
+          class="text-dark dark:text-light hover:text-primary transition-colors"
+          >Contacto</a
+        >
       </nav>
 
       <div class="flex items-center space-x-4">
         <ThemeToggle />
-        <a href="#contacto" class="bg-primary text-light px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+        <a
+          href="#contacto"
+          class="bg-primary text-light px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
+        >
           Contáctanos
         </a>
       </div>

@@ -1,0 +1,56 @@
+---
+const features = [
+  "Garantizamos operaciones estables, confiables y escalables",
+  "Utilizamos metodologías de estandarización y simulación propietarias",
+  "Proporcionamos indicadores clave de desempeño (KPIs) en tiempo real",
+  "Conectamos tus procesos de manufactura con sistemas de gestión empresarial (ERP)",
+];
+---
+
+<section id="quienessomos" class="py-20 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
+        ¿Quiénes Somos?
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+        Especialistas en Instrumentación, Automatización, Control y Sistemas de
+        Información Industrial
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="prose prose-lg dark:prose-invert">
+        <p class="text-gray-600 dark:text-gray-300 mb-6">
+          Entregamos la información correcta, a las personas indicadas, en el
+          momento oportuno, para que tomen la mejor decisión.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        {
+          features.map((feature) => (
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <svg
+                  class="h-6 w-6 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p class="ml-3 text-gray-600 dark:text-gray-300">{feature}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
