@@ -15,7 +15,14 @@
     </div>
 
     <div class="mt-16 max-w-lg mx-auto">
-      <form class="space-y-6" action="/api/contact" name="contact" method="POST" netlify>
+      <form class="space-y-6" name="contact" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
+        <div>
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
+        </div>
         <div>
           <label
             for="name"
@@ -117,6 +124,8 @@
         <!-- <div class="text-sm text-gray-600 dark:text-gray-400">
           Al enviar este formulario, acepta nuestra <a href="/privacidad" class="text-primary hover:text-primary/90">política de privacidad</a>.
         </div> -->
+
+        <div data-netlify-recaptcha="true"></div>
 
         <div>
           <button
