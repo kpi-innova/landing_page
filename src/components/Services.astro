@@ -27,31 +27,38 @@ const services = [
 ];
 ---
 
-<section id="servicios" class="py-20 bg-gray-50 dark:bg-gray-900">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center">
-      <h2 class="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
-        Nuestros Servicios
+<section id="servicios" class="py-24 bg-light dark:bg-dark relative overflow-hidden">
+  <!-- Decorative background -->
+  <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-secondary/5 rounded-full blur-3xl"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold font-heading text-dark dark:text-light sm:text-4xl mb-4">
+        Soluciones de <span class="text-primary">Alto Rendimiento</span>
       </h2>
-      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
-        Soluciones integrales para la industria moderna
+      <p class="text-lg text-gray-600 dark:text-gray-400">
+        Tecnología de punta aplicada a la optimización de procesos industriales.
       </p>
     </div>
 
     <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
       {
         services.map((service) => (
-          <div class="relative group">
-            <div class="absolute -inset-0.5 bg-gradient-to-r from-primary to-green-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
-            <div class="relative p-6 bg-white dark:bg-gray-800 rounded-lg">
-              <div class="text-primary" set:html={service.icon} />
-              <h3 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">
-                {service.title}
-              </h3>
-              <p class="mt-2 text-gray-600 dark:text-gray-300">
-                {service.description}
-              </p>
+          <div class="group relative bg-white dark:bg-dark-surface p-8 rounded-sm border border-gray-200 dark:border-gray-800 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_10px_40px_-10px_rgba(204,255,23,0.15)] hover:-translate-y-2">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+            
+            <div class="w-14 h-14 rounded bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div set:html={service.icon} />
             </div>
+            
+            <h3 class="text-xl font-bold font-heading text-dark dark:text-white mb-3 group-hover:text-primary transition-colors">
+              {service.title}
+            </h3>
+            
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              {service.description}
+            </p>
           </div>
         ))
       }

@@ -5,12 +5,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#2ECC71',
-        dark: '#1A1A1A',
-        light: '#FFFFFF',
+        primary: '#CCFF17', // Lime/Yellow-Green
+        secondary: '#FFFFFF', // White
+        dark: {
+          DEFAULT: '#0B1120', // Deep Navy
+          surface: '#1E293B', // Slate
+          lighter: '#334155',
+        },
+        light: '#F8FAFC',
       },
       fontFamily: {
         sans: ['Inter Variable', 'sans-serif'],
+        heading: ['Orbitron', 'sans-serif'],
+      },
+      backgroundImage: {
+        'hero-pattern': "radial-gradient(circle at center, rgba(204, 255, 23, 0.1) 0%, transparent 70%)",
       },
     },
   },

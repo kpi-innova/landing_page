@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 const features = [
   "Garantizamos operaciones estables, robustas y confiables",
   "Utilizamos metodologías de estandarización y simulación basadas en la norma ISA-S88",
@@ -7,49 +8,90 @@ const features = [
 ];
 ---
 
-<section id="quienessomos" class="py-20 bg-gray-50 dark:bg-gray-900">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
-        ¿Quiénes Somos?
-      </h2>
-      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
-        Especialistas en Instrumentación, Automatización, Control y Sistemas de
-        Información Industrial
-      </p>
-    </div>
+<section id="quienessomos" class="py-24 bg-dark relative overflow-hidden">
+  <!-- Decorative elements -->
+  <div
+    class="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"
+  >
+  </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div class="prose prose-lg dark:prose-invert">
-        <p class="text-gray-600 dark:text-gray-300 mb-6">
-          Entregamos la información correcta, a las personas indicadas, en el
-          momento oportuno, para que tomen la mejor decisión.
-        </p>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="order-2 lg:order-1">
+        <h2 class="text-3xl font-bold font-heading text-light sm:text-4xl mb-6">
+          Ingeniería de <span class="text-primary">Precisión</span>
+        </h2>
+
+        <div class="prose prose-lg prose-invert text-gray-400 mb-8">
+          <p class="leading-relaxed">
+            En KPI Innova, no solo automatizamos procesos; <strong
+              class="text-white"
+              >transformamos la manera en que opera tu industria</strong
+            >. Somos especialistas en la convergencia de OT (Tecnología de
+            Operaciones) e IT (Tecnología de la Información).
+          </p>
+          <p class="leading-relaxed">
+            Nuestra misión es entregar la información correcta, a las personas
+            indicadas, en el momento oportuno, para que tomen la mejor decisión
+            basada en datos reales.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6 mt-8">
+          <div class="p-4 rounded border border-gray-800 bg-gray-900/50">
+            <div class="text-4xl font-bold text-primary mb-1">10+</div>
+            <div class="text-sm text-gray-400 uppercase tracking-wider">
+              Años de Experiencia
+            </div>
+          </div>
+          <div class="p-4 rounded border border-gray-800 bg-gray-900/50">
+            <div class="text-4xl font-bold text-secondary mb-1">100%</div>
+            <div class="text-sm text-gray-400 uppercase tracking-wider">
+              Proyectos Exitosos
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="space-y-6">
-        {
-          features.map((feature) => (
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <svg
-                  class="h-6 w-6 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
+      <div class="order-1 lg:order-2 space-y-8">
+        <div class="relative group">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-sm blur opacity-25 group-hover:opacity-50 transition duration-1000"
+          >
+          </div>
+          <Image
+            src={import("../assets/precision-robot.webp")}
+            alt="Ingeniería Industrial de Precisión"
+            class="relative rounded-sm border border-gray-800 shadow-2xl grayscale-[0.5] hover:grayscale-0 transition-all duration-500"
+          />
+        </div>
+
+        <div class="space-y-4">
+          {
+            features.map((feature) => (
+              <div class="flex items-start p-3 rounded-sm border border-transparent hover:border-gray-800 hover:bg-gray-900/30 transition-colors duration-300">
+                <div class="flex-shrink-0 mt-1">
+                  <div class="flex items-center justify-center w-6 h-6 rounded bg-primary/10 text-primary">
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <p class="ml-4 text-gray-300 text-base">{feature}</p>
               </div>
-              <p class="ml-3 text-gray-600 dark:text-gray-300">{feature}</p>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
       </div>
     </div>
   </div>
