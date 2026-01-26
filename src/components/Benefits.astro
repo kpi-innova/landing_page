@@ -4,25 +4,33 @@ const benefits = [
     title: "Arranques más rápidos",
     description:
       "Reducimos hasta 60% el tiempo de arranque y puesta en marcha del proyecto.",
+    keyTitle: "benefits.1.title",
+    keyDesc: "benefits.1.desc",
     icon: `<svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>`,
   },
   {
     title: "Menos mantenimientos",
     description:
       "Evitamos llamadas a servicio técnico y mantenimientos hasta en un 70%.",
+    keyTitle: "benefits.2.title",
+    keyDesc: "benefits.2.desc",
     icon: `<svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>`,
   },
   {
     title: "Mayor OEE",
     description:
       "Incrementamos hasta un 30% la eficiencia general de los equipos.",
+    keyTitle: "benefits.3.title",
+    keyDesc: "benefits.3.desc",
     icon: `<svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`,
   },
   {
     title: "Software confiable",
     description:
       "Prevenimos los fallos por software hasta en un 95% de los casos.",
-    icon: `<svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>`,
+    keyTitle: "benefits.4.title",
+    keyDesc: "benefits.4.desc",
+    icon: `<svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>`,
   },
 ];
 ---
@@ -36,9 +44,15 @@ const benefits = [
       <h2
         class="text-3xl font-bold font-heading text-dark dark:text-light sm:text-4xl mb-4"
       >
-        Resultados <span class="text-secondary">Tangibles</span>
+        <span data-i18n="benefits.title">Resultados</span>
+        <span class="text-secondary" data-i18n="benefits.title.highlight"
+          >Tangibles</span
+        >
       </h2>
-      <p class="text-lg text-gray-600 dark:text-gray-400">
+      <p
+        class="text-lg text-gray-600 dark:text-gray-400"
+        data-i18n="benefits.subtitle"
+      >
         La automatización no es un gasto, es una inversión estratégica con
         retorno medible.
       </p>
@@ -56,10 +70,16 @@ const benefits = [
               <div class="inline-flex justify-center text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
                 <div class="w-12 h-12" set:html={benefit.icon} />
               </div>
-              <h3 class="text-xl font-bold text-dark dark:text-white mb-2">
+              <h3
+                class="text-xl font-bold text-dark dark:text-white mb-2"
+                data-i18n={benefit.keyTitle}
+              >
                 {benefit.title}
               </h3>
-              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              <p
+                class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed"
+                data-i18n={benefit.keyDesc}
+              >
                 {benefit.description}
               </p>
             </div>

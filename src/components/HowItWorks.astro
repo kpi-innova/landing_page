@@ -4,32 +4,37 @@ const steps = [
   {
     number: "01",
     title: "Análisis Inicial",
-    description:
-      "Evaluamos tus necesidades y procesos actuales para identificar áreas de mejora y oportunidades de optimización.",
+    description: "Evaluamos tus necesidades y procesos actuales para identificar áreas de mejora y oportunidades de optimización.",
+    keyTitle: "process.1.title",
+    keyDesc: "process.1.desc",
   },
   {
     number: "02",
     title: "Diseño de Solución",
-    description:
-      "Desarrollamos una solución personalizada que se adapta perfectamente a tus objetivos específicos y desafíos.",
+    description: "Desarrollamos una solución personalizada que se adapta perfectamente a tus objetivos específicos y desafíos.",
+    keyTitle: "process.2.title",
+    keyDesc: "process.2.desc",
   },
   {
     number: "03",
     title: "Simulación y Pruebas",
-    description:
-      "Simulamos y corregimos los sistemas offline. Posteriormente realizamos el FAT con el cliente para obtener aprobación.",
+    description: "Simulamos y corregimos los sistemas offline. Posteriormente realizamos el FAT con el cliente para obtener aprobación.",
+    keyTitle: "process.3.title",
+    keyDesc: "process.3.desc",
   },
   {
     number: "04",
     title: "Implementación Experta",
-    description:
-      "Instalamos, configuramos e integramos el sistema con la máxima eficiencia y mínima interrupción de tus operaciones actuales.",
+    description: "Instalamos, configuramos e integramos el sistema con la máxima eficiencia y mínima interrupción de tus operaciones actuales.",
+    keyTitle: "process.4.title",
+    keyDesc: "process.4.desc",
   },
   {
     number: "05",
     title: "Seguimiento y Optimización",
-    description:
-      "Proporcionamos soporte continuo y realizamos optimizaciones basadas en el rendimiento para asegurar el éxito a largo plazo.",
+    description: "Proporcionamos soporte continuo y realizamos optimizaciones basadas en el rendimiento para asegurar el éxito a largo plazo.",
+    keyTitle: "process.5.title",
+    keyDesc: "process.5.desc",
   },
 ];
 ---
@@ -48,11 +53,11 @@ const steps = [
   
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="text-center mb-20">
-      <div class="inline-block px-3 py-1 mb-4 text-xs font-mono font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full backdrop-blur-sm">
+      <div class="inline-block px-3 py-1 mb-4 text-xs font-mono font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full backdrop-blur-sm" data-i18n="process.badge">
         Metodología Probada
       </div>
       <h2 class="text-4xl font-bold font-heading text-light sm:text-5xl">
-        Nuestro <span class="text-primary">Proceso</span>
+        <span data-i18n="process.title">Nuestro</span> <span class="text-primary" data-i18n="process.title.highlight">Proceso</span>
       </h2>
     </div>
 
@@ -68,11 +73,11 @@ const steps = [
               <!-- Content Side -->
               <div class="flex-1 w-full md:w-auto pl-12 md:pl-0 md:text-right">
                 <div class={`bg-dark-surface/60 backdrop-blur-md p-8 rounded-sm border border-gray-800 hover:border-primary/50 transition-all duration-300 group ${index % 2 === 0 ? "md:text-left shadow-[20px_0_40px_-20px_rgba(204,255,23,0.1)]" : "md:text-right shadow-[-20px_0_40px_-20px_rgba(204,255,23,0.1)]"}`}>
-                   <h3 class="text-2xl font-bold text-white mb-3 flex items-center md:inline-flex gap-4 group-hover:text-primary transition-colors">
+                   <h3 class="text-2xl font-bold text-white mb-3 flex items-center md:inline-flex gap-4 group-hover:text-primary transition-colors" data-i18n={step.keyTitle}>
                     <span class="md:hidden text-primary font-mono text-sm px-2 py-1 bg-primary/10 rounded">0{index + 1}</span>
                     {step.title}
                   </h3>
-                  <p class="text-gray-300 text-base leading-relaxed">
+                  <p class="text-gray-300 text-base leading-relaxed" data-i18n={step.keyDesc}>
                     {step.description}
                   </p>
                 </div>

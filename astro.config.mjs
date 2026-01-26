@@ -8,4 +8,11 @@ export default defineConfig({
     defaultLocale: 'es',
     locales: ['es'],
   },
+  vite: {
+    server: {
+      watch: {
+        usePolling: true,
+      },
+    },
+  },
 });

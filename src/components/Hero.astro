@@ -26,23 +26,26 @@ import { Image } from "astro:assets";
           class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary mb-6 backdrop-blur-sm"
         >
           <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-          <span class="text-xs font-mono tracking-widest uppercase"
-            >Automatización & Control</span
+          <span
+            class="text-xs font-mono tracking-widest uppercase"
+            data-i18n="hero.badge">Automatización & Control</span
           >
         </div>
 
         <h1
           class="text-6xl sm:text-7xl lg:text-8xl font-bold font-heading text-light leading-tight mb-6"
         >
-          Domina tu <br />
+          <span data-i18n="hero.title.dominate">Domina tu</span>
+          <br />
           <span
             class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
-            >Producción</span
+            data-i18n="hero.title.production">Producción</span
           >
         </h1>
 
         <p
           class="mt-4 text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0 leading-relaxed backdrop-blur-[2px]"
+          data-i18n="hero.subtitle"
         >
           Ingeniería de precisión y sistemas de información para escalar tu
           industria. Transformamos datos en decisiones y procesos en
@@ -56,8 +59,9 @@ import { Image } from "astro:assets";
             href="#contacto"
             class="group relative inline-flex justify-center items-center px-10 py-5 text-base font-bold text-dark bg-primary rounded-sm overflow-hidden transition-all hover:bg-primary/90 hover:shadow-[0_0_30px_rgba(204,255,23,0.6)]"
           >
-            <span class="relative z-10 uppercase tracking-widest"
-              >Iniciar Proyecto</span
+            <span
+              class="relative z-10 uppercase tracking-widest"
+              data-i18n="hero.cta.start">Iniciar Proyecto</span
             >
             <div
               class="absolute inset-0 -translate-x-full group-hover:translate-x-0 bg-white/20 transition-transform duration-300 skew-x-12"
@@ -67,6 +71,7 @@ import { Image } from "astro:assets";
           <a
             href="#servicios"
             class="inline-flex justify-center items-center px-10 py-5 border border-gray-600 bg-dark/20 backdrop-blur-sm text-base font-medium rounded-sm text-gray-200 hover:text-white hover:border-primary/50 transition-colors uppercase tracking-wider"
+            data-i18n="hero.cta.explore"
           >
             Explorar Soluciones
           </a>
@@ -87,7 +92,9 @@ import { Image } from "astro:assets";
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                 clip-rule="evenodd"></path></svg
             >
-            <span class="uppercase tracking-widest">Certificación ISO</span>
+            <span class="uppercase tracking-widest" data-i18n="hero.cert.iso"
+              >Certificación ISO</span
+            >
           </div>
           <div class="flex items-center gap-3">
             <svg
@@ -100,8 +107,9 @@ import { Image } from "astro:assets";
                 d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
                 clip-rule="evenodd"></path></svg
             >
-            <span class="uppercase tracking-widest"
-              >Procesos en Tiempo Real</span
+            <span
+              class="uppercase tracking-widest"
+              data-i18n="hero.cert.realtime">Procesos en Tiempo Real</span
             >
           </div>
         </div>

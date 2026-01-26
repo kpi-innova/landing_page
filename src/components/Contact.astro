@@ -10,11 +10,17 @@
         <h2
           class="text-3xl font-bold font-heading text-dark dark:text-light sm:text-4xl mb-6"
         >
-          Hablemos de tu <br /> Próximo <span class="text-primary"
+          <span data-i18n="contact.title">Hablemos de tu</span>
+          <br />
+          <span data-i18n="contact.title.break">Próximo</span>
+          <span class="text-primary" data-i18n="contact.title.highlight"
             >Proyecto</span
           >
         </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+        <p
+          class="text-lg text-gray-600 dark:text-gray-400 mb-8"
+          data-i18n="contact.text"
+        >
           ¿Listo para optimizar tu planta? Nuestros ingenieros están listos para
           analizar tus requerimientos y proponerte una solución a medida.
         </p>
@@ -47,7 +53,7 @@
               <label
                 for="name"
                 class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                >Nombre</label
+                data-i18n="contact.form.name">Nombre</label
               >
               <input
                 type="text"
@@ -61,7 +67,7 @@
               <label
                 for="phone"
                 class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                >Teléfono</label
+                data-i18n="contact.form.phone">Teléfono</label
               >
               <input
                 type="tel"
@@ -77,7 +83,7 @@
             <label
               for="company"
               class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-              >Empresa</label
+              data-i18n="contact.form.company">Empresa</label
             >
             <input
               type="text"
@@ -92,7 +98,7 @@
             <label
               for="email"
               class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-              >Email Corporativo</label
+              data-i18n="contact.form.email">Email Corporativo</label
             >
             <input
               type="email"
@@ -107,7 +113,7 @@
             <label
               for="message"
               class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-              >¿Cómo podemos ayudarte?</label
+              data-i18n="contact.form.message">¿Cómo podemos ayudarte?</label
             >
             <textarea
               id="message"
@@ -123,6 +129,7 @@
           <button
             type="submit"
             class="w-full flex justify-center py-4 px-4 border border-transparent rounded-sm shadow-sm text-base font-bold text-dark bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all uppercase tracking-wide"
+            data-i18n="contact.form.submit"
           >
             Solicitar Demo
           </button>
