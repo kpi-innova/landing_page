@@ -17,7 +17,7 @@ export const ui = {
         'hero.badge': 'Automatización & Control',
         'hero.title.dominate': 'Domina tu',
         'hero.title.production': 'Producción',
-        'hero.subtitle': 'Ingeniería de precisión y sistemas de información para escalar tu industria. Transformamos datos en decisiones y procesos en rentabilidad.',
+        'hero.subtitle': 'Automatización industrial y sistemas de información que generan procesos estables, mejores decisiones y mayor rentabilidad.',
         'hero.cta.start': 'Iniciar Proyecto',
         'hero.cta.explore': 'Explorar Soluciones',
         'hero.cert.iso': 'Certificación ISO',
