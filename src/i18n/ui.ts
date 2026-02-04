@@ -25,7 +25,7 @@ export const ui = {
         'whoweare.title': 'Ingeniería de',
         'whoweare.title.highlight': 'Precisión',
         'whoweare.text1': 'En KPI Innova, mediante la automatización de procesos, **transformamos la forma en que opera tu industria**. Somos especialistas en la convergencia de OT (Tecnología de Operaciones) e IT (Tecnología de la Información).',
-        'whoweare.text2': 'Nuestra misión es entregar la información correcta, a las personas adecuadas, en el momento oportuno, para que tomen la mejor decisión basada en datos reales.',
+        'whoweare.text2': 'Nuestra misión es simple: asegurar procesos de producción estables y entregar la información correcta para que se tomen mejores decisiones.',
         'whoweare.years': 'Años de Experiencia',
         'whoweare.projects': 'Proyectos Exitosos',
         'features.1': 'Garantizamos operación de las líneas de producción estables, robustas y confiables',
