@@ -20,7 +20,7 @@ export const ui = {
         'hero.subtitle': 'Automatización industrial y sistemas de información que generan procesos de producción estables, mejores decisiones y mayor rentabilidad.',
         'hero.cta.start': 'Iniciar Proyecto',
         'hero.cta.explore': 'Explorar Soluciones',
-        'hero.cert.iso': 'Certificación ISO',
+        'hero.cert.iso': 'Programación Estandarizada',
         'hero.cert.realtime': 'Procesos en Tiempo Real',
         'whoweare.title': 'Ingeniería de',
         'whoweare.title.highlight': 'Precisión',
