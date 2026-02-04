@@ -28,7 +28,7 @@ export const ui = {
         'whoweare.text2': 'Nuestra misión es simple: asegurar procesos de producción estables y entregar la información correcta para que se tomen mejores decisiones.',
         'whoweare.years': 'Años de Experiencia',
         'whoweare.projects': 'Proyectos Exitosos',
-        'features.1': 'Garantizamos operación de las líneas de producción estables, robustas y confiables',
+        'features.1': 'Garantizamos la operación estable, robusta y confiable de las líneas de producción',
         'features.2': 'Desarrollamos utilizando metodologías de estandarización y simulación basadas en la norma ISA-S88',
         'features.3': 'Transformamos los datos de las líneas de producción en dashboards con los KPIs mas relevantes',
         'features.4': 'Conectamos tus procesos de manufactura con sistemas de gestión empresarial (ERP)',
