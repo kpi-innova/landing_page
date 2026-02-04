@@ -43,7 +43,7 @@ export const ui = {
         'benefits.3.title': 'Mayor OEE',
         'benefits.3.desc': 'Procesos estables y confiables incrementan hasta un 30% la eficiencia de los equipos.',
         'benefits.4.title': 'Software confiable',
-        'benefits.4.desc': 'Prevenimos los fallos por software hasta en un 95% de los casos.',
+        'benefits.4.desc': 'Reducimos los fallos por software hasta en un 95%.',
         // Services
         'services.title': 'Soluciones de',
         'services.title.highlight': 'Alto Rendimiento',
