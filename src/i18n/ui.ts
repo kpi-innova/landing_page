@@ -47,13 +47,13 @@ export const ui = {
         // Services
         'services.title': 'Soluciones de',
         'services.title.highlight': 'Alto Rendimiento',
-        'services.subtitle': 'Tecnología de punta aplicada a la optimización de procesos industriales.',
+        'services.subtitle': 'Tecnología de punta aplicada a la automatización y optimización de procesos industriales.',
         'services.1.title': 'Automatización Industrial',
-        'services.1.desc': 'Desarrollamos sistemas con estandares basados en ISA-S88, en plataforma Rockwell y ProLeiT.',
+        'services.1.desc': 'Desarrollamos sistemas con estandares basados en ISA-S88, en plataforma Rockwell, Wonderware y ProLeiT.',
         'services.2.title': 'Sistemas de Información',
         'services.2.desc': 'Integración ERP, recolección de datos productivos, visualización KPI, trazabilidad y genealogía y sistemas OEE.',
         'services.3.title': 'Sistemas HMI personalizados',
-        'services.3.desc': 'Desarrollamos aplicaciones HMI intuitivas y adaptadas a las necesidades específicas de tu operación.',
+        'services.3.desc': 'HMI intuitivas con una amplia variedad de ayudas operativas y de mantenimiento integradas.',
         'services.4.title': 'Migración y Modernización',
         'services.4.desc': 'Actualización de sistemas obsoletos con tecnologías de vanguardia manteniendo continuidad operativa.',
         // Process (HowItWorks)
