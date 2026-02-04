@@ -21,7 +21,7 @@ export const ui = {
         'hero.cta.start': 'Iniciar Proyecto',
         'hero.cta.explore': 'Explorar Soluciones',
         'hero.cert.iso': 'Programación Estandarizada',
-        'hero.cert.realtime': 'Procesos en Tiempo Real',
+        'hero.cert.realtime': 'Dashboard en Tiempo Real',
         'whoweare.title': 'Ingeniería de',
         'whoweare.title.highlight': 'Precisión',
         'whoweare.text1': 'En KPI Innova, mediante la automatización de procesos, **transformamos la forma en que opera tu industria**. Somos especialistas en la convergencia de OT (Tecnología de Operaciones) e IT (Tecnología de la Información).',
