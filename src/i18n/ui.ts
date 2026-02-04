@@ -38,7 +38,7 @@ export const ui = {
         'benefits.subtitle': 'La automatización no es un gasto, es una inversión estratégica con retorno medible.',
         'benefits.1.title': 'Arranques más rápidos',
         'benefits.1.desc': 'Reducimos hasta 60% el tiempo de arranque y puesta en marcha del proyecto.',
-        'benefits.2.title': 'Menos mantenimientos',
+        'benefits.2.title': 'Disminuimos mantenimiento reactivo',
         'benefits.2.desc': 'Evitamos llamadas a servicio técnico y mantenimientos hasta en un 70%.',
         'benefits.3.title': 'Mayor OEE',
         'benefits.3.desc': 'Incrementamos hasta un 30% la eficiencia general de los equipos.',
