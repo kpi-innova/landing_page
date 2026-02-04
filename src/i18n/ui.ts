@@ -17,7 +17,7 @@ export const ui = {
         'hero.badge': 'Automatización & Control',
         'hero.title.dominate': 'Domina tu',
         'hero.title.production': 'Producción',
-        'hero.subtitle': 'Automatización industrial y sistemas de información que generan procesos estables, mejores decisiones y mayor rentabilidad.',
+        'hero.subtitle': 'Automatización industrial y sistemas de información que generan procesos de producción estables, mejores decisiones y mayor rentabilidad.',
         'hero.cta.start': 'Iniciar Proyecto',
         'hero.cta.explore': 'Explorar Soluciones',
         'hero.cert.iso': 'Certificación ISO',
