@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const solutions = [
+    {
+        title: "Industria Alimenticia",
+        description:
+            "Automatización de procesos de mezcla, cocción y envasado cumpliendo con normativas de inocuidad. Optimizamos la trazabilidad y el control de calidad en cada etapa de la producción.",
+        keyTitle: "solutions.food.title",
+        keyDesc: "solutions.food.desc",
+        image: "https://images.unsplash.com/photo-1598516827083-d34e6d3c051a?q=80&w=2070&auto=format&fit=crop", // Placeholder image
+    },
+    {
+        title: "Petróleo y Gas",
+        description:
+            "Sistemas de control robustos y seguros para ambientes críticos y zonas peligrosas. Implementamos monitoreo remoto y control avanzado para garantizar la seguridad operativa.",
+        keyTitle: "solutions.oil.title",
+        keyDesc: "solutions.oil.desc",
+        image: "https://images.unsplash.com/photo-1581093583449-8255a4d1d6a9?q=80&w=2070&auto=format&fit=crop", // Placeholder image
+    },
+];
+---
+
+<Layout
+    title="Soluciones | KPI-Innova"
+    description="Soluciones especializadas para la industria alimenticia y de petróleo y gas."
+>
+    <div class="pt-24 pb-12 bg-light dark:bg-dark min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h1
+                    class="text-4xl font-bold font-heading text-dark dark:text-light mb-4"
+                >
+                    <span data-i18n="solutions.title">Soluciones por</span>
+                    <span
+                        class="text-primary"
+                        data-i18n="solutions.title.highlight">Industria</span
+                    >
+                </h1>
+                <p
+                    class="text-lg text-gray-600 dark:text-gray-400"
+                    data-i18n="solutions.subtitle"
+                >
+                    Experiencia especializada en sectores clave.
+                </p>
+            </div>
+
+            <div class="grid gap-12 lg:grid-cols-2">
+                {
+                    solutions.map((solution) => (
+                        <div class="bg-white dark:bg-dark-surface rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300">
+                            <div class="h-64 overflow-hidden">
+                                <img
+                                    src={solution.image}
+                                    alt={solution.title}
+                                    class="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                                />
+                            </div>
+                            <div class="p-8">
+                                <h3
+                                    class="text-2xl font-bold font-heading text-dark dark:text-white mb-4"
+                                    data-i18n={solution.keyTitle}
+                                >
+                                    {solution.title}
+                                </h3>
+                                <p
+                                    class="text-gray-600 dark:text-gray-400 leading-relaxed"
+                                    data-i18n={solution.keyDesc}
+                                >
+                                    {solution.description}
+                                </p>
+                                <div class="mt-6">
+                                    <a
+                                        href="/#contacto"
+                                        class="text-primary hover:text-white font-medium text-sm uppercase tracking-wider transition-colors"
+                                    >
+                                        Mas información &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</Layout>

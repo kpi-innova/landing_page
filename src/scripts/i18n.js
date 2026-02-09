@@ -50,12 +50,18 @@ function updateDOM() {
 }
 
 // Initialize on load
-document.addEventListener('DOMContentLoaded', () => {
+// Initialize on load and after navigation (View Transitions)
+document.addEventListener('astro:page-load', () => {
+    // Update DOM with current language
     updateDOM();
 
     const toggle = document.getElementById('language-toggle');
     if (toggle) {
-        toggle.addEventListener('click', () => {
+        // Clone element to remove existing listeners (safeguard)
+        const newToggle = toggle.cloneNode(true);
+        toggle.parentNode.replaceChild(newToggle, toggle);
+
+        newToggle.addEventListener('click', () => {
             currentLang = currentLang === 'es' ? 'en' : 'es';
             localStorage.setItem(LANG_STORAGE_KEY, currentLang);
             updateDOM();
